@@ -1,3 +1,3 @@
 read_globals = {
-    "minetest", "travelnet",
+    "minetest", "travelnet", "xcompat",
 }

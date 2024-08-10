@@ -48,13 +48,11 @@ minetest.override_item("fancy_travelnet:undercore", {
 	inventory_image = "fancy_travelnet_undercore_inv.png",
 })
 
-if minetest.get_modpath("default") then
-	minetest.register_craft({
-		type = "shapeless",
-		output = "fancy_travelnet:fancy_travelnet",
-		recipe = {"group:travelnet", "default:gold_ingot"}
-	})
-end
+minetest.register_craft({
+	type = "shapeless",
+	output = "fancy_travelnet:fancy_travelnet",
+	recipe = {"group:travelnet", xcompat.materials.gold_ingot}
+})
 
 if minetest.get_modpath("moreores") then
 	minetest.register_craft({
